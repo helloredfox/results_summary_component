@@ -23,6 +23,7 @@
 }
 html {
     font-size: 18px;
+    font-family: "Hanken Grotesk";
 }
 body {
     height: 100vh;
@@ -36,8 +37,53 @@ main {
 .result-card {
     
 }
-.summary-card {
-    width: 500px;
-    border-radius: 5px;
+.summary-card-container {
+    width: 650px;
+    border-radius: 20px;
     box-shadow: 1px 1px 30px hsla(224, 30%, 27%, .3);
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+.summary-card-container > section {
+    flex: 1 0;
+}
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    padding: 15px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+.icon-and-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.reaction-item {
+    color: var(--light-red);
+    background-color: hsl(0, 100%, 67%, .1);
+}
+.memory-item {
+    color: var(--orangey-yellow);
+    background-color:hsl(39, 100%, 56%, .1);
+}
+.verbal-item {
+    color: var(--green-teal);
+    background-color:hsl(166, 100%, 37%, .1);
+}
+.visual-item {
+    color: var(--cobalt-blue);
+    background-color: hsl(234, 85%, 45%, .1);
+}
+.summary-score {
+    color: darkgray;
+}
+.numerator {
+    color: black;
+    font-weight: 800;
 }
